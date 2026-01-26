@@ -6,5 +6,6 @@ namespace PageFlow.Blazor
     {
         Task NavigateToAsync<TComponent>(object? parameters)
             where TComponent : IComponent;
+        Task NavigateToAsync(Type componentType, object? parameters = null);
     }
 }

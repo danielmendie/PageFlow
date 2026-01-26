@@ -3,12 +3,12 @@ using System.Reflection;
 
 namespace PageFlow.Blazor.Business
 {
-    public class PageFlowNavigator : IPageFlowNavigator
+    public class RouteNavigator : IPageFlowNavigator
     {
         protected readonly IRouteResolver _routeResolver;
         protected readonly NavigationState _navigationState;
 
-        public PageFlowNavigator(IRouteResolver routeResolver,
+        public RouteNavigator(IRouteResolver routeResolver,
             NavigationState navigationState)
         {
             _routeResolver = routeResolver;
@@ -22,6 +22,22 @@ namespace PageFlow.Blazor.Business
 
             var route = await _routeResolver.GetRouteAsync(componentType.Name);
 
+            if (route is null)
+            {
+                route = CreateDynamicRoute(componentType, paramDict);
+            }
+
+            _navigationState.Set(route, null);
+        }
+
+        public async Task NavigateToAsync(Type componentType, object? parameters = null)
+        {
+            if (!typeof(IComponent).IsAssignableFrom(componentType))
+                throw new ArgumentException("Type must implement IComponent.", nameof(componentType));
+
+            var paramDict = ToDictionary(parameters);
+
+            var route = await _routeResolver.GetRouteAsync(componentType.Name);
             if (route is null)
             {
                 route = CreateDynamicRoute(componentType, paramDict);

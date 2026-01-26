@@ -14,7 +14,7 @@
 		<RepositoryUrl>https://github.com/danielmendie/PageFlow</RepositoryUrl>
 		<PackageTags>Web Assembly</PackageTags>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>2.0.1</Version>
+		<Version>2.0.2</Version>
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
