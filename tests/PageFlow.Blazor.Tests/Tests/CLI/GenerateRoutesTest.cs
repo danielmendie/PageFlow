@@ -13,7 +13,7 @@ namespace PageFlow.Blazor.Tests.Tests.CLI
             {
                 Command = "routes",
                 Subcommand = "generate",
-                Path = @"C:\Users\Danie\OneDrive\Desktop\TestApp\TestApp",
+                Path = @"path to project",
                 Force = false,
                 Verbose = true,
                 DryRun = true
@@ -27,14 +27,14 @@ namespace PageFlow.Blazor.Tests.Tests.CLI
         }
 
         [Test]
-        //[Ignore("Only to be run on actual dev env")]
+        [Ignore("Only to be run on actual dev env")]
         public void GenerateRoutesCommand_WithValidFile_ShouldProcess_Successfully()
         {
             var option = new CommandOptions
             {
                 Command = "routes",
                 Subcommand = "generate",
-                Path = @"C:\Remote\ColorWorkspace.AuthPlugin\src\ColorWorkspace.AuthPlugin",
+                Path = @"path to project",
                 Force = true,
                 Verbose = true,
                 DryRun = false

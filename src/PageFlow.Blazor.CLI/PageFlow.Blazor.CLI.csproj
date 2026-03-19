@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>annotations</Nullable>
 		<PackAsTool>True</PackAsTool>
@@ -17,7 +17,7 @@
 		<RepositoryUrl>https://github.com/danielmendie/PageFlow</RepositoryUrl>
 		<PackageTags>CLI</PackageTags>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>2.0.1</Version>
+		<Version>2.0.5</Version>
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
@@ -37,12 +37,12 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.9.1" />
-		<PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.22" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.14.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.Scripting.Common" Version="4.14.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.14.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.14.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Scripting.Common" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="5.0.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.25" />
 		<PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
 	</ItemGroup>
 	<ItemGroup>
