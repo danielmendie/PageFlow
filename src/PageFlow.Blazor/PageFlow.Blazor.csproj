@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -14,7 +14,7 @@
 		<RepositoryUrl>https://github.com/danielmendie/PageFlow</RepositoryUrl>
 		<PackageTags>Web Assembly</PackageTags>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>2.0.5</Version>
+		<Version>2.0.6</Version>
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
@@ -39,9 +39,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.25" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.25" />
-		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.10" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.10" />
 	</ItemGroup>
 
 	<ItemGroup>

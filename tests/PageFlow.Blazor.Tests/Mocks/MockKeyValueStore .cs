@@ -15,5 +15,15 @@
             _store.TryGetValue(key, out var v);
             return Task.FromResult((T?)v);
         }
+
+        public Task RemoveItemAsync(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task ClearAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

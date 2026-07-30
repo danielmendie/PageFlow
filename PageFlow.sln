@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageFlow.Blazor.Tests", "te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageFlow.Blazor.Common", "src\PageFlow.Blazor.Common\PageFlow.Blazor.Common.csproj", "{4E9296A3-D8D1-473B-B7C4-BF7F724A228D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryApp", "sample\CountryApp.csproj", "{336E5E74-4D83-4822-BFEA-925E93BDA294}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solution", "_solution", "{3F552BBC-D573-43FC-931F-45A84C08A52E}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
@@ -43,10 +41,6 @@ Global
 		{4E9296A3-D8D1-473B-B7C4-BF7F724A228D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E9296A3-D8D1-473B-B7C4-BF7F724A228D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E9296A3-D8D1-473B-B7C4-BF7F724A228D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{336E5E74-4D83-4822-BFEA-925E93BDA294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{336E5E74-4D83-4822-BFEA-925E93BDA294}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{336E5E74-4D83-4822-BFEA-925E93BDA294}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{336E5E74-4D83-4822-BFEA-925E93BDA294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

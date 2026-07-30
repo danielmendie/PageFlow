@@ -117,8 +117,10 @@ namespace PageFlow.Blazor.CLI.Commands
                     sb.AppendLine($"PageName =  \"{component.PageName}\",");
                     sb.AppendLine($"Component =  nameof({component.Component}),");
                     sb.AppendLine($"ComponentType =  typeof({component.Component}),");
-                    sb.AppendLine($"IsDefault =  {(component.IsDefault ? "true" : "false")},");
-
+                    if (component.IsDefault)
+                    {
+                        sb.AppendLine($"IsDefault = true,");
+                    }
                     if (properties.Any())
                     {
                         sb.AppendLine("Params = new()");
